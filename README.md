@@ -9,6 +9,6 @@ If you find our work useful, please consider citing our paper
     author={Wang, Bokun and Lei, Yunwen and Ying, Yiming and Yang, Tianbao},
     journal={International Conference on Learning Representations},
     year={2025},
-    url={[https://openreview.net/forum?id=pFyXqxChZc](https://openreview.net/forum?id=s15HrqCqbr)}
+    url={https://openreview.net/forum?id=s15HrqCqbr}
 }
 ```
