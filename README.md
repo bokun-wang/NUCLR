@@ -35,7 +35,7 @@ You can evaluate the pretrained model using the `--evaluate` argument of `clip.p
 ## More Details of Implementation
 
 
-The NUCLR algorithm is implemented in "./models/losses.py" as "DGCL_Loss". Consider a compositional function $L(\mathbf{w})=f(\ell(\mathbf{w}))$, the gradient is $\nabla L(\mathbf{w})=f'(\ell(\mathbf{w}))\nabla \ell(\mathbf{w})$. "DGCL_Loss" implements the “half-loss-half-gradient” $\text{detach}[f'(\ell(\mathbf{w}))]\nabla \ell(\mathbf{w})$  such that the gradient $\nabla L(\mathbf{w})$ can can be computed via autodiff on $\text{detach}[f'(\ell(\mathbf{w}))]\nabla \ell(\mathbf{w})$. Please refer to [this note](./dpm_grad_comp.pdf) for the detailed derivation. 
+The NUCLR algorithm is implemented in "./models/losses.py" as "DGCL_Loss". Consider a compositional function $L(\mathbf{w})=f(\ell(\mathbf{w}))$, the gradient is $\nabla L(\mathbf{w})=f'(\ell(\mathbf{w}))\nabla \ell(\mathbf{w})$. "DGCL_Loss" implements the “half-loss-half-gradient” $\text{detach}[f'(\ell(\mathbf{w}))] \ell(\mathbf{w})$  such that the gradient $\nabla L(\mathbf{w})$ can can be computed via autodiff on $\text{detach}[f'(\ell(\mathbf{w}))] \ell(\mathbf{w})$. Please refer to [this note](./dpm_grad_comp.pdf) for the detailed derivation. 
 
 
 ## How to cite
